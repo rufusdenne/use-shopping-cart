@@ -2,7 +2,7 @@ import React from 'react'
 import { graphql, StaticQuery } from 'gatsby'
 import SkuCard from './SkuCard'
 
-const conatinerStyles = {
+const containerStyles = {
   display: 'flex',
   flexDirection: 'row',
   flexWrap: 'wrap',
@@ -34,7 +34,7 @@ export default (props) => (
       }
     `}
     render={({ prices }) => (
-      <div style={conatinerStyles}>
+      <div style={containerStyles}>
         {prices.edges.map(({ node: price }) => {
           const newSku = {
             sku: price.id,
